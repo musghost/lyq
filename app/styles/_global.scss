@@ -1,0 +1,56 @@
+header{
+  .special{
+    color: $gray-text;
+    background-color: $gray-background;
+    padding: 5px 0;
+    text-transform: uppercase;
+    font-size: 11px;
+    a{
+      color: $gray-text;
+      display: inline-block;
+      span{
+        color: $pink;
+      }
+      & + a{
+        margin-left: 20px;
+      }
+    }
+  }
+  .navbar{
+    padding: 15px 0;
+    .nav > li{
+      & > a{
+        color: $gray-text;
+        font-weight: 300;
+      }
+      &.active{
+        a{
+          color: $pink;
+        }
+      }
+    }
+  }
+  .navbar-brand{
+    background: {
+      image: url('../images/lindoyquerido.png');
+      size: cover;
+      repeat: no-repeat;
+    }
+    text-indent: -9999px;
+    width: 225px;
+    height: 56px;
+    margin-right: 20px;
+  }
+}
+a{
+  color: $gray-text;
+  &:hover,
+  &:focus{
+    color: $pink;
+    text-decoration: none;
+  }
+}
+
+#main{
+  font-weight: 300;
+}
